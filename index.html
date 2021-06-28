@@ -4,16 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather-app</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello Git</h1>
-    <form>
-      <input type="email" placeholder="Enter your email" />
-      <input type="password" placeholder="Enter your password" />
+    <img src="Images/sunny.jpg" alt="" width="400" />
 
-      <input type="submit" value="Login" />
+    <h1 id="city"></h1>
+    <h2></h2>
+    <h3><span id="temperature-city"></span> °C</h3>
+    <h4 id="temp-description"></h4>
+    <h5></h5>
+    <h6></h6>
+
+    <ul>
+      <li>Humidity: <span id="humidity"></span>%</li>
+      <li>Wind: <span id="wind"></span>km/h</li>
+      <li>Feels like: <span id="feels-like"></span>°C</li>
+    </ul>
+
+    <form id="search-city">
+      <input
+        type="text"
+        placeholder="Search for a city"
+        autocomplete="off"
+        autofocus="on"
+        id="search-text-input"
+      />
+      <input type="submit" value="Search" />
+
+      <button id="current-location">Current Location</button>
     </form>
     <script src="script.js"></script>
   </body>
